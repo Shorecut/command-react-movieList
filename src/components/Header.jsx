@@ -5,7 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../icons/logo.gif";
 
-function Navbar() {
+function Header() {
   return (
     <Navbar expand="lg" className="bg-dark navbar-dark">
       <Container fluid>
@@ -35,4 +35,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Header;
