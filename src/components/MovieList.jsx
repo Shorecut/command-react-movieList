@@ -4,6 +4,7 @@ import MovieItem from "./MovieItem";
 
 const MovieList = () => {
   const { movies, getMovies } = useMovieContext();
+  console.log(movies);
 
   useEffect(() => {
     getMovies();
