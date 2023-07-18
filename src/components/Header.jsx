@@ -7,7 +7,7 @@ import logo from "../icons/logo.gif";
 
 function Header() {
   return (
-    <Navbar expand="lg" className="bg-dark navbar-dark">
+    <Navbar expand="lg" className="bg-transparent navbar-light">
       <Container fluid>
         <Navbar.Brand href={logo}></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
