@@ -11,28 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.card {
+.movieList {
+  display: flex;
+  justify-content: space-evenly;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cardMovie {
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 200px;
+  height: 300px;
   background-color: #f2f2f2;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  flex-direction: column;
   overflow: hidden;
   perspective: 1000px;
   box-shadow: 0 0 0 5px #ffffff80;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.card svg {
+.cardMovie svg {
   width: 48px;
   fill: #333;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
-.card:hover {
+.cardMovie:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
@@ -45,25 +54,27 @@ code {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 200px;
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  background-color: #0000009a;
   transform: rotateX(-90deg);
   transform-origin: bottom;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.card:hover .card__content {
+.cardMovie:hover .card__content {
   transform: rotateX(0deg);
 }
 
 .card__title {
   margin: 0;
+  text-align: center;
   font-size: 24px;
-  color: #333;
+  color: #ffffff;
   font-weight: 700;
+  width: 100%;
 }
 
 .card:hover svg {
@@ -72,7 +83,9 @@ code {
 
 .card__description {
   margin: 10px 0 0;
-  font-size: 14px;
-  color: #777;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  color: #ffffff;
   line-height: 1.4;
 }
