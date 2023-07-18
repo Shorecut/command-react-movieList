@@ -73,7 +73,7 @@
       "category": "movie"
     },
     {
-      "name": "Экзорцист Ватикана",
+      "name": "Круче некуда",
       "date": "2023",
       "stars": "9.0",
       "image": "https://kinogo.film/uploads/mini/short2/90/1688463963-195927843-kruche-nekuda.webp",
@@ -129,11 +129,11 @@
       "category": "movie"
     },
     {
-      "name": "crew",
-      "date": "121212",
-      "stars": "8",
-      "image": "https://kinogo.biz/uploads/mini/minifull/e04/1683213244-1682973621.webp",
-      "category": "https://kinogo.biz/uploads/mini/minifull/e04/1683213244-1682973621.webp",
+      "name": "Синий Жук",
+      "date": "2023",
+      "stars": "8.7",
+      "image": "https://kinogo.film/uploads/mini/short2/d3/1679479868-1274397059-siniy-zhuk.webp",
+      "category": "movie",
       "id": 25
     },
     {
@@ -143,6 +143,54 @@
       "image": "https://kinogo.biz/uploads/mini/minifull/e30/1669235955-1249474783.webp",
       "category": "cartoon",
       "id": 34
+    },
+    {
+      "name": "Крэйвен-охотник",
+      "date": "2023",
+      "stars": "8.1",
+      "image": "https://kinogo.film/uploads/mini/short2/f6/1687699733-960731974-kreyven-ohotnik.webp",
+      "category": "movie",
+      "id": 94
+    },
+    {
+      "name": "Астрал",
+      "date": "2010",
+      "stars": "6.2",
+      "image": "https://kinogo.film/uploads/mini/short2/15/1582196735-58106119-astral.webp",
+      "category": "movie",
+      "id": 90
+    },
+    {
+      "name": "Криманальный город 3",
+      "date": "2023",
+      "stars": "9.4",
+      "image": "https://kinogo.film/uploads/mini/short2/b9/1688662660-1843188477-kriminalnyy-gorod-3.webp",
+      "category": "movie",
+      "id": 88
+    },
+    {
+      "name": "Аватар: Путь воды",
+      "date": "2022",
+      "stars": "9.7",
+      "image": "https://kinogo.film/uploads/mini/short2/be/1671557625-1275449896-avatar-put-vody.webp",
+      "category": "movie",
+      "id": 97
+    },
+    {
+      "name": "Пурпурные сердца",
+      "date": "2022",
+      "stars": "9.7",
+      "image": "https://kinogo.film/uploads/mini/short2/8b/1662386822-722019875-purpurnye-serdca.webp",
+      "category": "movie",
+      "id": 95
+    },
+    {
+      "name": "Люби снова",
+      "date": "2023",
+      "stars": "7.4",
+      "image": "https://kinogo.film/uploads/mini/short2/bf/1679393200-1425910483-lyubi-snova.webp",
+      "category": "movie",
+      "id": 96
     }
   ]
 }
