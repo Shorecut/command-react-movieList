@@ -4,8 +4,10 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../icons/logo.gif";
+import { useNavigate } from "react-router";
 
 function Header() {
+  const navigate = useNavigate();
   return (
     <Navbar expand="lg" className="bg-dark navbar-dark">
       <Container fluid>
@@ -17,8 +19,8 @@ function Header() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
+            <Nav.Link onClick={() => navigate("/")}>Home</Nav.Link>
+            <Nav.Link onClick={() => navigate("/add")}>addMovie</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
