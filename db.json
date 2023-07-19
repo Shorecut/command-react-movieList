@@ -1,7 +1,7 @@
 {
   "movies": [
     {
-      "name": "Форсаж 10 ",
+      "title": "Форсаж 10 ",
       "date": "2023",
       "stars": "3.5",
       "image": "https://kinogo.biz/uploads/mini/minifull/0f0/1684490729-47676620.webp",
@@ -9,7 +9,7 @@
       "category": "movie"
     },
     {
-      "name": "Стражи Галактики. Часть 3",
+      "title": "Стражи Галактики. Часть 3",
       "date": "2023",
       "stars": "7.8",
       "image": "https://kinogo.biz/uploads/mini/minifull/685/1681582195-1571492667.webp",
@@ -17,7 +17,7 @@
       "category": "movie"
     },
     {
-      "name": "Тайлер Рейк: Операция по спасению 2 ",
+      "title": "Тайлер Рейк: Операция по спасению 2 ",
       "date": "2023",
       "stars": "6.9",
       "image": "https://kinogo.biz/uploads/mini/minifull/726/1686934453-459464613.webp",
@@ -25,7 +25,7 @@
       "category": "movie"
     },
     {
-      "name": "Джон Уик 4",
+      "title": "Джон Уик 4",
       "date": "2023",
       "stars": "9.3",
       "image": "https://kinogo.biz/uploads/mini/minifull/848/1665170820-277396920.webp",
@@ -33,7 +33,7 @@
       "category": "movie"
     },
     {
-      "name": "Человек-паук: Паутина вселенных",
+      "title": "Человек-паук: Паутина вселенных",
       "date": " 2023",
       "stars": "9.8",
       "image": "https://kinogo.biz/uploads/mini/minifull/4bf/1685729150-1840634406.webp",
@@ -41,7 +41,7 @@
       "category": "cartoon"
     },
     {
-      "name": "Флэш ",
+      "title": "Флэш ",
       "date": "2023",
       "stars": "7.4",
       "image": "https://kinogo.biz/uploads/mini/minifull/30c/1686935503-2070524548.webp",
@@ -49,7 +49,7 @@
       "category": "movie"
     },
     {
-      "name": "Нефариус",
+      "title": "Нефариус",
       "date": "2023",
       "stars": "8.3",
       "image": "https://kinogo.biz/uploads/mini/minifull/55c/1686851816_poster.webp",
@@ -57,7 +57,7 @@
       "category": "movie"
     },
     {
-      "name": "Русалочка ",
+      "title": "Русалочка ",
       "date": "2023",
       "stars": "5.7",
       "image": "https://kinogo.biz/uploads/mini/minifull/966/1679731549-1701562719.webp",
@@ -65,7 +65,7 @@
       "category": "movie"
     },
     {
-      "name": "Иллюзия побега",
+      "title": "Иллюзия побега",
       "date": "2023",
       "stars": "5.6",
       "image": "https://img-24x7.site/uploads/af/5121110.jpg",
@@ -73,7 +73,7 @@
       "category": "movie"
     },
     {
-      "name": "Круче некуда",
+      "title": "Круче некуда",
       "date": "2023",
       "stars": "9.0",
       "image": "https://kinogo.film/uploads/mini/short2/90/1688463963-195927843-kruche-nekuda.webp",
@@ -81,7 +81,7 @@
       "category": "movie"
     },
     {
-      "name": "Элементарно",
+      "title": "Элементарно",
       "date": "2023",
       "stars": "8.1",
       "image": "https://kinogo.film/uploads/mini/short2/87/1687455860_elemental-2023.webp",
@@ -89,7 +89,7 @@
       "category": "cartoon"
     },
     {
-      "name": "Слишком милый кризис",
+      "title": "Слишком милый кризис",
       "date": "2023",
       "stars": "9.0",
       "image": "https://img-24x7.site/uploads/e1/5276611.jpg",
@@ -97,7 +97,7 @@
       "category": "cartoon"
     },
     {
-      "name": "Царевны и Таинственная гостья",
+      "title": "Царевны и Таинственная гостья",
       "date": "2023",
       "stars": "5.9",
       "image": "https://kinogo.biz/uploads/mini/minifull/20a/1682357378-1507245862.webp",
@@ -105,7 +105,7 @@
       "category": "cartoon"
     },
     {
-      "name": "Снежная королева: Разморозка",
+      "title": "Снежная королева: Разморозка",
       "date": "2022",
       "stars": "7.5",
       "image": "https://kinogo.biz/uploads/mini/minifull/eeb/1677435473-1196939164.webp",
@@ -113,7 +113,7 @@
       "category": "cartoon"
     },
     {
-      "name": "Маша и Медведь в кино: 12 месяцев",
+      "title": "Маша и Медведь в кино: 12 месяцев",
       "date": "2022",
       "stars": "8.5",
       "image": "https://kinogo.biz/uploads/mini/minifull/5f1/1672519677-2110736676.webp",
@@ -121,7 +121,7 @@
       "category": "cartoon"
     },
     {
-      "name": "Чёрный список",
+      "title": "Чёрный список",
       "date": "2013",
       "stars": "7.5",
       "image": "https://img-24x7.site/uploads/e1/741231.jpg",
@@ -129,7 +129,8 @@
       "category": "movie"
     },
     {
-      "name": "Синий Жук",
+
+      "title": "Синий Жук",
       "date": "2023",
       "stars": "8.7",
       "image": "https://kinogo.film/uploads/mini/short2/d3/1679479868-1274397059-siniy-zhuk.webp",
@@ -137,7 +138,7 @@
       "id": 25
     },
     {
-      "name": "Чинк: Хвостатый детектив ",
+      "title": "Чинк: Хвостатый детектив ",
       "date": "2022",
       "stars": "8.6",
       "image": "https://kinogo.biz/uploads/mini/minifull/e30/1669235955-1249474783.webp",
@@ -145,7 +146,8 @@
       "id": 34
     },
     {
-      "name": "Крэйвен-охотник",
+
+      "title": "Крэйвен-охотник",
       "date": "2023",
       "stars": "8.1",
       "image": "https://kinogo.film/uploads/mini/short2/f6/1687699733-960731974-kreyven-ohotnik.webp",
@@ -153,7 +155,8 @@
       "id": 94
     },
     {
-      "name": "Астрал",
+
+      "title": "Астрал",
       "date": "2010",
       "stars": "6.2",
       "image": "https://kinogo.film/uploads/mini/short2/15/1582196735-58106119-astral.webp",
@@ -161,7 +164,8 @@
       "id": 90
     },
     {
-      "name": "Криманальный город 3",
+
+      "title": "Криманальный город 3",
       "date": "2023",
       "stars": "9.4",
       "image": "https://kinogo.film/uploads/mini/short2/b9/1688662660-1843188477-kriminalnyy-gorod-3.webp",
@@ -169,7 +173,8 @@
       "id": 88
     },
     {
-      "name": "Аватар: Путь воды",
+
+      "title": "Аватар: Путь воды",
       "date": "2022",
       "stars": "9.7",
       "image": "https://kinogo.film/uploads/mini/short2/be/1671557625-1275449896-avatar-put-vody.webp",
@@ -177,7 +182,7 @@
       "id": 97
     },
     {
-      "name": "Пурпурные сердца",
+      "title": "Пурпурные сердца",
       "date": "2022",
       "stars": "9.7",
       "image": "https://kinogo.film/uploads/mini/short2/8b/1662386822-722019875-purpurnye-serdca.webp",
@@ -185,12 +190,20 @@
       "id": 95
     },
     {
-      "name": "Люби снова",
+      "title": "Люби снова",
       "date": "2023",
       "stars": "7.4",
       "image": "https://kinogo.film/uploads/mini/short2/bf/1679393200-1425910483-lyubi-snova.webp",
       "category": "movie",
       "id": 96
+    },
+    {
+      "title": "fdghjkl",
+      "date": "rtfygjhu",
+      "stars": null,
+      "image": "gfhjk",
+      "id": 98
+
     }
   ]
 }

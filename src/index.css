@@ -98,6 +98,14 @@ code {
   line-height: 1.4;
 }
 
+
+.inp-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .card_btns {
   display: flex;
   padding-top: 20px;
@@ -231,3 +239,4 @@ code {
   transform: translateY(0px);
   transition-duration: 0.3s;
 }
+
