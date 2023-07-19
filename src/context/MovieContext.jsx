@@ -29,13 +29,12 @@ const MovieContext = ({ children }) => {
   async function getMovies() {
     try {
       const { data } = await axios.get(API);
-      console.log(data);
       dispatch({
         type: ACTION.movies,
         payload: data,
       });
     } catch (error) {
-      notify(`${error.response.status}: ${error.response.statusText}`, "error");
+      console.log(error);
     }
   }
 
@@ -47,7 +46,7 @@ const MovieContext = ({ children }) => {
         payload: data,
       });
     } catch (error) {
-      notify(`${error.response.status}: ${error.response.statusText}`, "error");
+      console.log(error);
     }
   }
 
@@ -57,7 +56,7 @@ const MovieContext = ({ children }) => {
       getMovies();
       notify("Deleted", "error");
     } catch (error) {
-      notify(`${error.response.status}: ${error.response.statusText}`, "error");
+      console.log(error);
     }
   }
 
@@ -66,15 +65,16 @@ const MovieContext = ({ children }) => {
       await axios.patch(`${API}/${id}`, newData);
       notify("changed");
     } catch (error) {
-      notify(`${error.response.status}: ${error.response.statusText}`, "error");
+      console.log(error);
     }
   }
 
   async function addMovie(newMovie) {
     try {
       await axios.post(API, newMovie);
+      getMovies();
     } catch (error) {
-      notify(`${error.response.status}: ${error.response.statusText}`, "error");
+      console.log(error);
     }
   }
 
