@@ -14,25 +14,20 @@ const AddMoviePage = () => {
 
   function handleChange(e) {
     setFormVal({ ...formVal, [e.target.name]: e.target.value });
-    // console.log(formVal);
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
       !formVal.title.trim() ||
-      !formVal.date.trim() ||
+      !formVal.date ||
       !formVal.stars.trim() ||
       !formVal.image.trim()
     ) {
       return;
     }
 
-
-
     addMovie({ ...formVal, date: +formVal.date });
-
-    addMovie({ ...formVal, stars: +formVal.stars });
 
     setFormVal({
       title: "",
@@ -44,7 +39,6 @@ const AddMoviePage = () => {
   return (
     <div>
       <h2 style={{ textAlign: "center" }}>Add Movie</h2>
-
 
       <Form onSubmit={handleSubmit} className="mt-4 inp-form">
         <Form.Control
@@ -79,9 +73,10 @@ const AddMoviePage = () => {
           onClick={handleSubmit}
           variant="outline-success"
           className="w-25 text-align-center mt-2"
-         >
-               Save
+        >
+          Save
         </Button>
+      </Form>
     </div>
   );
 };

@@ -39,17 +39,17 @@ const MovieContext = ({ children }) => {
     }
   }
 
-  // async function getOneMovie(id) {
-  //   try {
-  //     const { data } = await axios.get(`${API}/${id}`);
-  //     dispatch({
-  //       type: ACTION.movie,
-  //       payload: data,
-  //     });
-  //   } catch (error) {
-  //     notify(`${error.response.status}: ${error.response.statusText}`, "error");
-  //   }
-  // }
+  async function getOneMovie(id) {
+    try {
+      const { data } = await axios.get(`${API}/${id}`);
+      dispatch({
+        type: ACTION.movie,
+        payload: data,
+      });
+    } catch (error) {
+      notify(`${error.response.status}: ${error.response.statusText}`, "error");
+    }
+  }
 
   async function deleteMovie(id) {
     try {
@@ -82,7 +82,7 @@ const MovieContext = ({ children }) => {
     movies: state.movies,
     movie: state.movie,
     getMovies,
-    // getOneMovie,
+    getOneMovie,
     addMovie,
     deleteMovie,
     editMovie,
