@@ -15,6 +15,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 .movieList {
   display: flex;
   gap: 90px;
@@ -98,7 +99,6 @@ code {
   line-height: 1.4;
 }
 
-
 .inp-form {
   display: flex;
   flex-direction: column;
@@ -116,8 +116,8 @@ code {
 /* ? Buttons in Card */
 /* todo delete */
 .delete-button {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: rgb(20, 20, 20);
   border: none;
@@ -178,8 +178,8 @@ code {
 }
 /* todo Edit */
 .edit-button {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: rgb(20, 20, 20);
   border: none;
@@ -239,4 +239,3 @@ code {
   transform: translateY(0px);
   transition-duration: 0.3s;
 }
-

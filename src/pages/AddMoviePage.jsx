@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { useMovieContext } from "../context/MovieContext";
 import Form from "react-bootstrap/Form";
 import { Button } from "react-bootstrap";
+import { Link, useNavigate } from "react-router-dom";
 
 const AddMoviePage = () => {
+  const navigate = useNavigate();
   const { addMovie } = useMovieContext();
   const [formVal, setFormVal] = useState({
     title: "",
@@ -69,8 +71,10 @@ const AddMoviePage = () => {
           onChange={handleChange}
           className="mt-3 w-25"
         ></Form.Control>
+
         <Button
-          onClick={handleSubmit}
+          onClick={() => navigate("/")}
+          type="submit"
           variant="outline-success"
           className="w-25 text-align-center mt-2"
         >
