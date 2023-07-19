@@ -22,14 +22,14 @@ const AddMoviePage = () => {
     e.preventDefault();
     if (
       !formVal.title.trim() ||
-      !formVal.date ||
+      !formVal.date.trim() ||
       !formVal.stars.trim() ||
       !formVal.image.trim()
     ) {
       return;
     }
 
-    addMovie({ ...formVal, date: +formVal.date });
+    addMovie(formVal);
 
     setFormVal({
       title: "",
@@ -37,6 +37,7 @@ const AddMoviePage = () => {
       stars: "",
       image: "",
     });
+    navigate(-1);
   };
   return (
     <div>
@@ -60,7 +61,7 @@ const AddMoviePage = () => {
         <Form.Control
           name="stars"
           value={formVal.stars}
-          placeholder="Rating"
+          placeholder="rating"
           onChange={handleChange}
           className="mt-3 w-25"
         ></Form.Control>
@@ -73,7 +74,6 @@ const AddMoviePage = () => {
         ></Form.Control>
 
         <Button
-          onClick={() => navigate("/")}
           type="submit"
           variant="outline-success"
           className="w-25 text-align-center mt-2"
