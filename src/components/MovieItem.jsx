@@ -16,7 +16,7 @@ const MovieItem = ({ item }) => {
         <div className="card__content">
           <p className="card__title">{item.title}</p>
           <p className="card__description">{item.date}</p>
-          <p className="card__description">{item.stars}</p>
+          <p className="card__description">&#9733; {item.stars}</p>
           <div className="card_btns">
             <button
               onClick={() => deleteMovie(item.id)}
