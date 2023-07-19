@@ -28,7 +28,6 @@ const AddMoviePage = () => {
       return;
     }
 
-    addMovie({ ...formVal, date: +formVal.date });
     addMovie({ ...formVal, stars: +formVal.stars });
 
     setFormVal({
@@ -42,34 +41,39 @@ const AddMoviePage = () => {
     <div>
       <h2 style={{ textAlign: "center" }}>Add Movie</h2>
 
-      <Form onSubmit={handleSubmit} className="inp-form">
+      <Form onSubmit={handleSubmit} className="mt-4 inp-form">
         <Form.Control
+          name="title"
           value={formVal.title}
-          placeholder="Movie name"
+          placeholder="movie name"
           onChange={handleChange}
-          className="w-50"
+          className="w-25"
         ></Form.Control>
         <Form.Control
+          name="date"
           value={formVal.date}
-          placeholder="Date"
+          placeholder="date"
           onChange={handleChange}
-          className="mt-3 w-50"
+          className="mt-3 w-25"
         ></Form.Control>
         <Form.Control
+          name="stars"
           value={formVal.stars}
           placeholder="Rating"
           onChange={handleChange}
-          className="mt-3 w-50"
+          className="mt-3 w-25"
         ></Form.Control>
         <Form.Control
+          name="image"
           value={formVal.image}
           placeholder="image"
           onChange={handleChange}
-          className="mt-3 w-50"
+          className="mt-3 w-25"
         ></Form.Control>
         <Button
+          onClick={handleSubmit}
           variant="outline-success"
-          className="w-50 text-align-center mt-2"
+          className="w-25 text-align-center mt-2"
         >
           Save
         </Button>

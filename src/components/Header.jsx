@@ -9,7 +9,7 @@ import { useNavigate } from "react-router";
 function Header() {
   const navigate = useNavigate();
   return (
-    <Navbar expand="lg" className="bg-dark navbar-dark">
+    <Navbar expand="lg" className="bg-transparent navbar-light">
       <Container fluid>
         <Navbar.Brand href={logo}></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
