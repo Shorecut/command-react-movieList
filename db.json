@@ -129,7 +129,6 @@
       "category": "movie"
     },
     {
-
       "title": "Синий Жук",
       "date": "2023",
       "stars": "8.7",
@@ -146,7 +145,6 @@
       "id": 34
     },
     {
-
       "title": "Крэйвен-охотник",
       "date": "2023",
       "stars": "8.1",
@@ -155,7 +153,6 @@
       "id": 94
     },
     {
-
       "title": "Астрал",
       "date": "2010",
       "stars": "6.2",
@@ -164,7 +161,6 @@
       "id": 90
     },
     {
-
       "title": "Криманальный город 3",
       "date": "2023",
       "stars": "9.4",
@@ -173,7 +169,6 @@
       "id": 88
     },
     {
-
       "title": "Аватар: Путь воды",
       "date": "2022",
       "stars": "9.7",
@@ -196,14 +191,6 @@
       "image": "https://kinogo.film/uploads/mini/short2/bf/1679393200-1425910483-lyubi-snova.webp",
       "category": "movie",
       "id": 96
-    },
-    {
-      "title": "fdghjkl",
-      "date": "rtfygjhu",
-      "stars": null,
-      "image": "gfhjk",
-      "id": 98
-
     }
   ]
 }

@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useMovieContext } from "../context/MovieContext";
 import { useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 
 const EditPage = () => {
-  const { addMovie } = useMovieContext();
+  const { editMovie, getOneMovie, movie } = useMovieContext();
+  const navigate = useNavigate();
+  const { id } = useParams();
   const [formVal, setFormVal] = useState({
     title: "",
     date: "",
@@ -12,70 +15,76 @@ const EditPage = () => {
     image: "",
   });
 
+  useEffect(() => {
+    getOneMovie(id);
+  }, []);
+
+  useEffect(() => {
+    if (movie) {
+      setFormVal(movie);
+    }
+  }, [movie]);
+
   function handleChange(e) {
     setFormVal({ ...formVal, [e.target.name]: e.target.value });
-    // console.log(formVal);
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
       !formVal.title.trim() ||
-      !formVal.date.trim() ||
+      !formVal.date === "" ||
       !formVal.stars.trim() ||
       !formVal.image.trim()
     ) {
       return;
     }
 
-    addMovie({ ...formVal, date: +formVal.date });
-    addMovie({ ...formVal, stars: +formVal.stars });
+    editMovie({ ...formVal, date: +formVal.date });
 
-    setFormVal({
-      title: "",
-      date: "",
-      stars: "",
-      image: "",
-    });
+    navigate(-1);
   };
   return (
     <div>
-      <div>
-        <h2 style={{ textAlign: "center" }}>Edit Movie</h2>
+      <h2 style={{ textAlign: "center" }}>Edit Movie</h2>
 
-        <Form onSubmit={handleSubmit} className="w-75 mx-auto">
-          <Form.Control
-            value={formVal.title}
-            placeholder="Movie name"
-            onChange={handleChange}
-            className="w-50"
-          ></Form.Control>
-          <Form.Control
-            value={formVal.date}
-            placeholder="Date"
-            onChange={handleChange}
-            className="mt-3 w-50"
-          ></Form.Control>
-          <Form.Control
-            value={formVal.stars}
-            placeholder="Rating"
-            onChange={handleChange}
-            className="mt-3 w-50"
-          ></Form.Control>
-          <Form.Control
-            value={formVal.image}
-            placeholder="image"
-            onChange={handleChange}
-            className="mt-3 w-50"
-          ></Form.Control>
-          <Button
-            variant="outline-success"
-            className="w-50 text-align-center mt-2"
-          >
-            Save
-          </Button>
-        </Form>
-      </div>
+      <Form onSubmit={handleSubmit} className="mx-auto inp-form">
+        <Form.Control
+          name="title"
+          value={formVal.title}
+          placeholder="Movie title"
+          onChange={handleChange}
+          className="w-25"
+        ></Form.Control>
+        <Form.Control
+          name="date"
+          value={formVal.date}
+          placeholder="date"
+          onChange={handleChange}
+          className="mt-3 w-25"
+        ></Form.Control>
+        <Form.Control
+          name="stars"
+          value={formVal.stars}
+          placeholder="rating"
+          onChange={handleChange}
+          className="mt-3 w-25"
+        ></Form.Control>
+        <Form.Control
+          name="image"
+          value={formVal.image}
+          placeholder="image"
+          onChange={handleChange}
+          className="mt-3 w-25"
+        ></Form.Control>
+        <Button
+          type="submit"
+          variant="outline-success"
+          className="w-25 text-align-center mt-2"
+        >
+          Save
+        </Button>
+      </Form>
     </div>
   );
 };

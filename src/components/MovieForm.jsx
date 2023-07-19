@@ -1,7 +1,12 @@
 import React from "react";
+import MovieList from "./MovieList";
 
 const MovieForm = () => {
-  return <div></div>;
+  return (
+    <div>
+      <MovieList />
+    </div>
+  );
 };
 
 export default MovieForm;
