@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "../icons/logo.gif";
+
 import { useNavigate } from "react-router";
 
 function Header() {
@@ -9,8 +9,8 @@ function Header() {
   return (
     <Navbar expand="lg" className="navbar">
       <Container fluid>
-        <Navbar.Brand href={logo}></Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Brand href="https://freesvg.org/storage/img/thumb/mix2.png"></Navbar.Brand>
+
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="d-flex justify-content-between"

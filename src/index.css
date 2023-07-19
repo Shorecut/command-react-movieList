@@ -18,6 +18,7 @@ code {
     monospace;
 }
 
+
 /* todo Navbar */
 .navbar {
   background-color: #221449;
@@ -29,6 +30,7 @@ code {
   font-size: 30px;
   color: white;
 }
+
 
 .movieList {
   display: flex;
@@ -130,8 +132,8 @@ code {
 /* ? Buttons in Card */
 /* todo delete */
 .delete-button {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: rgb(20, 20, 20);
   border: none;
@@ -192,8 +194,8 @@ code {
 }
 /* todo Edit */
 .edit-button {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: rgb(20, 20, 20);
   border: none;
@@ -254,6 +256,7 @@ code {
   transition-duration: 0.3s;
 }
 
+
 /* todo Footer */
 .footer {
   display: flex;
@@ -284,3 +287,4 @@ code {
   justify-content: baseline;
   column-gap: 10px;
 }
+

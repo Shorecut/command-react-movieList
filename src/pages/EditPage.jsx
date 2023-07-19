@@ -31,16 +31,15 @@ const EditPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log("gello 1");
     if (
       !formVal.title.trim() ||
-      !formVal.date === "" ||
       !formVal.stars.trim() ||
       !formVal.image.trim()
     ) {
       return;
     }
-
-    editMovie({ ...formVal, date: +formVal.date });
+    editMovie(id, formVal);
 
     navigate(-1);
   };
