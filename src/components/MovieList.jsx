@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useMovieContext } from "../context/MovieContext";
 import MovieItem from "./MovieItem";
 import { Button } from "react-bootstrap";
+import Filter from "./Filter";
 
 const MovieList = () => {
   const { movies, getMovies } = useMovieContext();
@@ -25,6 +26,7 @@ const MovieList = () => {
 
   return (
     <div>
+      <Filter />
       <div className="sort-btn">
         <Button
           onClick={sort_plus}

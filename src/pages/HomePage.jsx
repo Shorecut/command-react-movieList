@@ -32,7 +32,11 @@ const HomePage = () => {
           className="pag-list_item"
         >
           {[...Array(pageTotalCount)].map((_, i) => (
-            <Pagination.Item onClick={() => setPage(i + 1)}>
+            <Pagination.Item
+              linkStyle={{ backgroundColor: "transparent", color: "#ffffff" }}
+              variant="secondary"
+              onClick={() => setPage(i + 1)}
+            >
               {i + 1}
             </Pagination.Item>
           ))}
