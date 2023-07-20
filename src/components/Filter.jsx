@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Button from "react-bootstrap/Button";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
+
 import { useSearchParams } from "react-router-dom";
 import { useMovieContext } from "../context/MovieContext";
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
