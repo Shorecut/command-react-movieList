@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 import { useNavigate } from "react-router";
+import LiveSearch from "./LiveSearch";
 
 function Header() {
   const navigate = useNavigate();
@@ -11,6 +12,7 @@ function Header() {
       <Nav.Link onClick={() => navigate("/")}>
         <p className="navbar_text">Home</p>
       </Nav.Link>
+      <LiveSearch />
       <Nav.Link className="navbar_add" onClick={() => navigate("/add")}>
         <p className="navbar_text">Add</p>
       </Nav.Link>
