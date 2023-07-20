@@ -21,7 +21,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
+/* ? category buttons */
+.category_btns {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.category_btns_item {
+  border: 1px solid white;
+  background-color: #ebeedb;
+  color: white;
+}
 /* todo Navbar */
 .navbar {
   background-color: #221449;
