@@ -300,3 +300,8 @@ code {
   justify-content: baseline;
   column-gap: 10px;
 }
+
+.pag-list_item {
+  display: flex;
+  justify-content: center;
+}
