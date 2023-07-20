@@ -1,7 +1,8 @@
-import React, { createContext, useContext, useReducer } from "react";
-import { ACTION, API } from "../utils/consts";
+import React, { createContext, useContext, useReducer, useState } from "react";
+import { ACTION, API, LIMIT } from "../utils/consts";
 import axios from "axios";
 import { notify } from "../components/Toastify";
+import { useSearchParams } from "react-router-dom";
 
 const movieContext = createContext();
 
@@ -12,6 +13,7 @@ export function useMovieContext() {
 const init = {
   movies: [],
   movie: null,
+  pageTotalCount: 1,
 };
 
 function reducer(state, action) {
@@ -20,15 +22,30 @@ function reducer(state, action) {
       return { ...state, movies: action.payload };
     case ACTION.movie:
       return { ...state, movie: action.payload };
+    case ACTION.pageTotalCount:
+      return { ...state, pageTotalCount: action.payload };
+    default:
+      return state;
   }
 }
 
 const MovieContext = ({ children }) => {
+  const [searchPar, setSearchPar] = useSearchParams();
   const [state, dispatch] = useReducer(reducer, init);
+  const [page, setPage] = useState(+searchPar.get("_page") || 1);
 
   async function getMovies() {
     try {
-      const { data } = await axios.get(API);
+      const { data, headers } = await axios.get(
+        `${API}${window.location.search}`
+      );
+      const totalCount = Math.ceil(headers["x-total-count"] / LIMIT);
+
+      dispatch({
+        type: ACTION.pageTotalCount,
+        payload: totalCount,
+      });
+
       dispatch({
         type: ACTION.movies,
         payload: data,
@@ -54,7 +71,6 @@ const MovieContext = ({ children }) => {
     try {
       await axios.delete(`${API}/${id}`);
       getMovies();
-      notify("Deleted", "error");
     } catch (error) {
       console.log(error);
     }
@@ -81,11 +97,14 @@ const MovieContext = ({ children }) => {
   const value = {
     movies: state.movies,
     movie: state.movie,
+    pageTotalCount: state.pageTotalCount,
     getMovies,
     getOneMovie,
     addMovie,
     deleteMovie,
     editMovie,
+    page,
+    setPage,
   };
   return (
     <movieContext.Provider value={value}>{children}</movieContext.Provider>
